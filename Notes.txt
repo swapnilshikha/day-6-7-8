@@ -1,0 +1,13 @@
+How to write JS in Html?
+1. inside body we can write <script></script>
+2. outside </html> also we can write.
+
+Whatever we write in console.log(), we will find it in chrome->inspect->console.
+
+console.log(x)
+let x=10;
+// error - cannot access x before initialization.
+
+= (initialise)
+== (checks only value)
+=== (checks value and data-types both)

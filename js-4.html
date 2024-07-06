@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        #head1{
+            color:teal;
+        } -->
+
+    </style>
+    <script>
+        // let x = document.createElement("h1");
+        // x.innerText = "Swapnilshikha :)";
+        // x.style.color="red"; // add style to the elements
+        // x.style.border ="1px solid blue";
+        // x.setAttribute("id", "head1"); //attribute, value
+        // X.setAttribute("class", "heading");
+
+        // let imp = document.createElement("input");
+        // let body = document.querySelector("body"); //grab body
+
+        //body.append(x, imp); //add element to the body //we can provide 100s of items in the brackets
+       
+        
+        
+        let arr = []; //if arr[] is put outside loop, it will just push the new items into existing array
+        function push(){
+            // let arr = []; //every time new array is created so we will put it outside loop
+            arr.push(imp.value);
+            console.log(arr);
+            display();
+        }
+
+        function display(){
+            div.innerHTML=""; //if we place it inside loop, it will clear the previous data every time
+            for(let i=0; i<arr.length; i++)
+            {
+                let head = document.createElement("h1");
+                head.innerText = arr[i];
+                div.append(head);
+            }
+        }
+
+        let body = document.querySelector("body");
+        let imp = document.createElement("input");
+        imp.setAttribute("id", "imp");
+
+        let div = document.createElement("div");
+
+        let btn = document.createElement("button");
+        btn.innerText = "CLICK";
+
+        btn.addEventListener("click", push)
+        body.append(imp, btn, div);
+
+        
+    </script>
+    
+</body>
+</html>

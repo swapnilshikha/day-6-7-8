@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" class="head">Heading 1</h1>
+    <h1 class="head">Heading 2</h1>
+    <h1 class="head">Heading 3</h1>
+    <h1 class="head">Heading 4</h1>
+    <h1 class="head">Heading 5</h1>
+    <input id="imp" type="text" value="Hey" placeholder="Enter name">
+
+    <button onclick="fun()"> CLICK </button>
+</body>
+</html>
+<script>
+    let x = document.querySelector("#heading");
+    console.log(x);
+    let a = document.querySelector(".head");
+    console.log(a); //it will search 1st element with mwentioned class and print only that
+
+    let a1 = document.querySelectorAll(".head"); //it will select all
+    console.log(a1);
+
+    let a2 = document.querySelectorAll("h1"); //h1 is element so select by element
+    console.log(a2);
+
+    function fun()
+    {
+        let a3 = document.querySelector("#imp");
+        console.log(a3.value); // if value attribute is not mentioned then black space is displayed, it will not show null/undefined becuase value-attribute is its property so cannot be undefined
+        
+        let y = document.querySelector("#heading");
+        y.innerHTML = a3.value;  //input's value is selected and then change the value of h1
+        console.log(a3.value);
+
+        let z = document.querySelector(".head")
+        z[2].innerHTML = a3.value;
+    }
+</script>

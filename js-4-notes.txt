@@ -1,0 +1,26 @@
+Assignment := login page, sign-up, home page. Make it dynamic.
+sign-up page;= username and password should be saved in an array using push operation
+
+Method-1
+user,
+pass,
+arr[[u,p], [u,p]]
+userdata[username, password];
+
+Method-2:=
+user[i],
+pass[i]
+
+Method 3:=
+{
+   {
+	user:"Megha";
+	pass:= "123@abc";
+   }
+}
+
+Query selector = we can select ID, class, etc together.
+
+chrome->inspect->application->local Storage
+but this storage is not secured, anyone can access it. 
+

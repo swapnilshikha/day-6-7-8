@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let x=50;
+    console.log("x");
+    console.log(x);
+    let y=typeof(x);
+    console.log(y);
+
+    let a="50";
+    console.log(typeof(a));
+
+    console.log(a.length); //if space present, it will count space also
+
+    let z = [1,2,3,4,5];
+    console.log(z);
+    z.push(6); //similarly pop
+    console.log(z);
+    z.pop();
+    console.log(z);
+
+    z.shift();
+    z.unshift(); //push-pop works from end whereas shift-unshift will at start
+
+    z="Hey"; //we can re-initialise the value but not re-declare, eg, (let z="hey") is invalid but (z="hey") is valid
+    console.log(z);
+
+    let a1=3, a2=4;
+    console.log(a1**a2); //to the power we use ** 
+    console.log(a2%a1); //modulo 
+
+    a2="4";
+    console.log(a1+a2); //type-conversion num=3 is converted into string, output is 34
+
+    let c=5;
+    let d="5";
+    console.log(c==d); //checks only value                      ~true
+    console.log(c===d); //checks both value and data-types      ~false
+
+    if(c===d)
+    {
+        console.log("inside if ~ when true");      //no execution.
+    }
+    else{
+        console.log("inside else ~ when false");  //it will get executed.
+    }
+
+    (c===d)?console.log("inside if ~ when true"):(c==d)?console.log("same value but diff data-types"):console.log("diff values"); //ternary operator
+
+    //console.log("100");
+    //console.log(100);
+    //console.log("hello megha");
+    // in console we can see the colour of string and num is different
+
+    let arr = [10, 11, 12, 13, 14, 15];
+    for(let i=0; i<arr.length; i++)
+    {
+        console.log(arr[i] + " index=" + i);
+    }
+    for(let i=0; i<=arr.length; i++)
+    {
+        console.log(arr[i]); //here <= is used so last element is undefined 
+    }
+
+</script>
